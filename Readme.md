@@ -104,6 +104,25 @@ Updating takes two steps:
 
 To update, open vim and run `:PluginInstall!` (notice the bang!)
 
+### Installing using vim-plug
+
+1. Install vim-plug using the [instructions][vim-plug]
+2. Add vim-coffee-script to your plugin list in `.vimrc` and re-source it:
+
+    insert vim-coffee-script
+    ```
+    '' Vim CoffeeScript
+    Plug 'kchmck/vim-coffee-script'
+    ```
+    between
+    `call plug#begin('~/.vim/plugged')`
+
+    and
+    `call plug#end()`
+3. Run `:PlugInstall`
+
+[vim-plug]:https://github.com/junegunn/vim-plug
+
 ## Install from a Zip File
 
 1. Download the latest zip file from [vim.org][zip].
